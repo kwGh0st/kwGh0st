@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karol Wojtacha</title>
+    <link
+      rel="icon"
+      href="./pictures/ghost.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3318035e44.js"></script>
+  </head>
+
+  <body onload="typeWriter()">
+    <!-- Navigation bar -->
+    <nav
+      class="menu-nav navbar navbar-expand-lg background-style-menu sticky-top font-style"
+      id="menu"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="https://github.com/kwGh0st"
+        target="_blank"
+          ><img
+            src="./pictures/java-icon.png"
+            alt="logo"
+            width="75"
+            height="55"
+        /></a>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <!-- <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="english.html">English</a>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </nav>
+    <!-- End #menu -->
+
+    <!-- Title section -->
+    <section class="section-title text-center" id="title">
+      <p class="font-style" id="text-title">Junior Java Developer</p>
+      <p class="font-style" id="write-text">H</p>
+      <p>
+        <img
+          src="./pictures/avatar.svg"
+          alt="avatar"
+          class="avatar"
+        />
+      </p>
+    </section>
+    <!-- End #title -->
+
+    <!-- About me section -->
+    <div id="aboutme"></div>
+    <section class="section-about background-style-sections">
+      <div class="container">
+        <div class="container-about">
+          <div class="row">
+            <div class="card-body">
+              <h3 class="font-style">Hello! My name is Karol.</h3>
+              <p class="card-text text-align-justify">
+                A passionate programmer with a strong foundation in Java. 
+                I'm enthusiastic about crafting new things and creating software that solves real-world problems. 
+                My programming journey has been filled with learning, challenges, and creative problem-solving. 
+                I'm eager to continue growing, collaborating, and exploring new horizons in the world of software development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section2 background-style-sections"></section>
+    </section>
+    <!-- End #aboutme -->
+
+    <!-- Portfolio section -->
+    <div class="album info" id="portfolio">
+      <div class="container container-portfolio">
+        <h4
+          class="card-header background-style-headers font-style font-white mb-3"
+        >
+          Projects
+        </h4>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="./pictures/calculator.svg"
+                alt="Calculator Java App"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                  A basic calculator written in Java. The application supports
+                  addition, subtraction, multiplication, and division
+                  operations. It also handles decimal and negative numbers. The
+                  calculator has a graphical user interface (GUI) implemented
+                  using the Swing library. The code structure is divided into
+                  separate classes for each calculator button and the GUI
+                  itself. All button classes inherit from an abstract base
+                  class. Planned future enhancements include adding more
+                  advanced calculation functions such as square root or
+                  exponentiation.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/kwGh0st/java-apps-calculator"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a
+                    href="#"
+                    ><button type="button" class="btn btn-sm font-style button-style" data-bs-toggle="modal" data-bs-target="#calculator">
+                      Preview
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="./pictures/tic-tac-toe.svg"
+                alt="Tic-Tac-Toe game"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                  A logic game "Tic-Tac-Toe" implemented in Java. The
+                  graphical user interface (GUI) is built using the Swing
+                  library. Players use the mouse to click on a specific button
+                  to mark their "X" or "O" symbol. The code structure currently
+                  resides in a single class that combines both the graphical
+                  interface and game logic. After a game concludes, players have the option to restart the game.
+                   One of the planned modifications is
+                  to refactor the code by separating it into multiple classes
+                  and introducing a single-player mode against AI.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/kwGh0st/tic-tac-toe-game"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a
+                    href="#"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                      data-bs-toggle="modal" data-bs-target="#tictactoe"
+                    >
+                      Preview
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="./pictures/file-archive.svg"
+                alt="File Archive Java App"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                    A program that performs operations on .zip files.
+                    The JavaFX library was used to create the user interface, visually designed in the SceneBuilder application.
+                    The application also utilizes Gradle, a tool for managing dependencies, compiling, and building Java projects.          
+                  The archiver features:
+                    <ul class="text-start">
+                        <li>Creating a new file</li>
+                        <li>Adding and removing files to/from the archive</li>
+                        <li>Extracting the archive</li>
+                        <li>Displaying the contents</li>
+                    </ul>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/kwGh0st/java-file-archiver"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a href="#"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                      data-bs-toggle="modal" data-bs-target="#filearchiver"
+                    >
+                      Preview
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="./pictures/mail.svg"
+                alt="Email Client App"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                    Email Client - an email application that features a complete user interface developed using the JavaFX library and the SceneBuilder application.
+                    The utilized libraries include java.mail for SMTP and IMAP protocol handling, and activation for managing attachments. The project also makes use of Gradle, a tool for managing dependencies, compiling, and building Java projects.
+                    With this program, users can receive and send email messages, attach files to emails, and use multiple accounts simultaneously.
+                    The application includes an "Options" window where users can customize font size and component colors.
+                    The program also supports basic password encoding functionality using Base64.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/kwGh0st/java-email-client"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a
+                    href="#"
+                  
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                      data-bs-toggle="modal" data-bs-target="#emailclient"
+                    >
+                      Preview
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="./pictures/snake.svg"
+                alt="Snake Game"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                  Snake Game in Java is a classic game where the player controls a snake, attempting to collect as many apples as possible while avoiding collisions with its own body and the boundaries of the board.
+Players can control the snake's direction using arrow keys, with the objective of eating as many apples as possible.
+The application keeps track of the number of eaten apples, displaying the score on the board in real-time.
+The game ends when the snake hits a wall or itself.
+The game is based on an event-driven mechanism, ensuring smooth snake movement and responsiveness to player interactions.
+The application is written in Java, utilizing Swing to create the user interface.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/kwGh0st/java-snake-game"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a href="#"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                      data-bs-toggle="modal" data-bs-target="#snake"
+                    >
+                      Preview
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="./pictures/pong.svg"
+                alt="Java Pong Game"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                  Java Pong Game is an arcade game that simulates the popular Pong game. In this two-player game, each player controls a paddle to bounce a ball back and forth.            
+                  The game supports two players, allowing them to compete head-to-head on a single screen.
+                  The game employs realistic physics to simulate the bouncing of the ball off the paddles and boundaries.
+                  The game keeps track of the score for both players, displaying it on the screen and updating it as points are scored.
+                  Players can control the paddles using specific keys to move them up and down, adding a layer of skill to the gameplay.
+                  The game is developed in the Java programming language, leveraging its capabilities for graphics and user interface.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/kwGh0st/java-pong-game"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a href="#"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                      data-bs-toggle="modal" data-bs-target="#pong"
+                    >
+                      Preview
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card shadow-sm p-2">
+              <img
+                src="./pictures/space-invaders.svg"
+                alt="Space Invaders Java Game"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                  Java Space Game is space-themed game where players take on the role of a spaceship pilot and engage in an action-packed battle against enemy ships. The objective is to survive, defeat the enemy ships, and score points by eliminating them.
+                  Players control a spaceship engaging in battles against enemy ships.
+                  The game offers fast-paced and dynamic gameplay, keeping players on their toes as they dodge enemy attacks and fire their own weapons.
+                  A variety of enemy ships, each with unique characteristics and attack patternse.
+                  Players can fire rockets to defend themselves and eliminate enemy ships.
+                  Enemy ships exhibit randomized movement and attack patterns.
+                  The game features realistic physics for ship movement and projectile trajectories.
+The game is developed in Java, making use of Swing for the graphical user interface and animation.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/kwGh0st/java-space-game"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a href="#"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                      data-bs-toggle="modal" data-bs-target="#space"
+                    >
+                      Preview
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="./pictures/todo-list.svg"
+                alt="Java Todo App"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                    A web application built using the Spring framework. The application features a login mechanism that requires users to authenticate
+                    before accessing the task list functionalities. It utilizes an H2 database to store user task information. The database is saved to a file, 
+                    meaning that the data is persistent and available even after restarting the application.
+                    After logging in, users can browse, create, edit, and delete tasks. The task list is displayed in the user interface, where each task is presented as a list item.
+                    The application applies data validation to ensure that users provide accurate information when creating or editing tasks. 
+                    For example, if a user does not provide a task name, the application may return an error and prevent saving an empty task. 
+                    Validation helps ensure data correctness and avoids errors.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/kwGh0st/springframework/tree/master/TodoApp"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a href="#"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                      data-bs-toggle="modal" data-bs-target="#todo"
+                    >
+                      Preview
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="./pictures/two-dices.svg"
+                alt="Web DiceeGame"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                    DiceeGame - a simple game developed using HTML, CSS, and JavaScript. Upon clicking the button, we roll the dice - the player with the highest number wins.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/kwGh0st/web-diceegame"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a href="https://kwgh0st.github.io/web-diceegame/"
+                  target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      Link
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="./pictures/drum-kit.svg"
+                alt="Drum Kit Web App"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                    DrumKit - a website designed and built using HTML, CSS, and JavaScript.
+                    The sound samples correspond to pressing the corresponding keyboard button.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/kwGh0st/web-drumkit
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a href="https://kwgh0st.github.io/web-drumkit/"
+                  target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      Link
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm p-2">
+              <img
+                src="./pictures/simon-says.svg"
+                alt="Simon Says Web Game"
+                class="image-portfolio responsive"
+              />
+              <div class="card-body background-style">
+                <p class="card-text">
+                    Simon-Says Game - languages used are HTML, CSS, JavaScript.
+                    The gameplay consists of four tiles of different colors that emit different sounds.
+                    On each level, the player must memorize the entire sequence of sounds, which are randomly generated by AI.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://github.com/kwGh0st/web-simon-says-game"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      GitHub
+                    </button></a
+                  >
+                  <a href="https://kwgh0st.github.io/web-simon-says-game/"
+                  target="_blank"
+                    ><button
+                      type="button"
+                      class="btn btn-sm font-style button-style"
+                    >
+                      Link
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="album py-5 info" id="skills">
+      <div class="container container-skills">
+        <h4
+          class="card-header background-style-headers font-style font-white mb-3"
+        >
+        What I have learned.
+        </h4>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body background-style">
+                <h5
+                  class="card-header background-style-headers font-style font-white"
+                >
+                  Skills
+                </h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item background-style">Java</li>
+                  <li class="list-group-item background-style">JavaFx</li>
+                  <li class="list-group-item background-style">Spring</li>
+                  <li class="list-group-item background-style">HTML</li>
+                  <li class="list-group-item background-style">CSS</li>
+                  <li class="list-group-item background-style">JavaScript</li>     
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-body background-style">
+                <h5
+                  class="card-header background-style-headers font-style font-white"
+                >
+                  Skills
+                </h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item background-style">Git</li>
+                  <li class="list-group-item background-style">GitHub</li>
+                  <li class="list-group-item background-style">Gradle</li>
+                  <li class="list-group-item background-style">Maven</li>
+                  <li class="list-group-item background-style">Intelij Idea</li>
+                  <li class="list-group-item background-style">Visual Studio Code</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer background-style-menu" id="contact">
+        <p class="social">
+          <a
+            href="https://www.linkedin.com/in/karol-wojtacha/"
+            target="_blank"
+            class="px-3"
+            title="My LinkedIn Profile"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/kwGh0st"
+            target="_blank"
+            class="px-3"
+            title="My GitHub Profile"
+            ><i class="fab fa-github-square"></i
+          ></a>
+          <span class="float-end" title="To The Top"
+            ><a href="#"><i class="fas fa-chevron-circle-up"></i></a
+          ></span>
+        </p>
+      </div>
+    </footer>
+    <div class="modal fade" id="calculator" tabindex="-1" aria-labelledby="modal-media-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content border-primary">
+          <div class="modal-header font-darkblue">
+            <h5 class="modal-title font-style" id="modal-media-label">
+              Preview
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div>
+            <video controls muted autoplay loop alt="Calculator app" width="100%" height="auto" >
+              <source src="./pictures/preview/calculator-view.webm"> </video>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="tictactoe" tabindex="-1" aria-labelledby="modal-media-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content border-primary">
+          <div class="modal-header font-darkblue">
+            <h5 class="modal-title font-style" id="modal-media-label">
+              Preview
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div>
+            <video controls muted autoplay loop alt="Tic Tac Toe App app" width="100%" height="auto" >
+              <source src="./pictures/preview/tic-tac-toe-preview.webm"> </video>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="filearchiver" tabindex="-1" aria-labelledby="modal-media-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content border-primary">
+          <div class="modal-header font-darkblue">
+            <h5 class="modal-title font-style" id="modal-media-label">
+              Preview
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div>
+            <video controls muted autoplay loop alt="File Archiver app" width="100%" height="auto" >
+              <source src="./pictures/preview/file-archiver-preview.webm"> </video>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="emailclient" tabindex="-1" aria-labelledby="modal-media-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content border-primary">
+          <div class="modal-header font-darkblue">
+            <h5 class="modal-title font-style" id="modal-media-label">
+              Preview
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div>
+            <video controls muted autoplay loop alt="Email Client app" width="100%" height="auto" >
+              <source src="./pictures/preview/email-client-preview.webm"> </video>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="snake" tabindex="-1" aria-labelledby="modal-media-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content border-primary">
+          <div class="modal-header font-darkblue">
+            <h5 class="modal-title font-style" id="modal-media-label">
+              Preview
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div>
+            <video controls muted autoplay loop alt="Snake Game app" width="100%" height="auto" >
+              <source src="./pictures/preview/snake-preview.webm"> </video>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="pong" tabindex="-1" aria-labelledby="modal-media-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content border-primary">
+          <div class="modal-header font-darkblue">
+            <h5 class="modal-title font-style" id="modal-media-label">
+              Preview
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div>
+            <video controls muted autoplay loop alt="Pong Game app" width="100%" height="auto" >
+              <source src="./pictures/preview/pong-preview.webm"> </video>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="space" tabindex="-1" aria-labelledby="modal-media-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content border-primary">
+          <div class="modal-header font-darkblue">
+            <h5 class="modal-title font-style" id="modal-media-label">
+              Preview
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div>
+            <video controls muted autoplay loop alt="Space Game app" width="100%" height="auto" >
+              <source src="./pictures/preview/space-invaders-preview.webm"> </video>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="todo" tabindex="-1" aria-labelledby="modal-media-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content border-primary">
+          <div class="modal-header font-darkblue">
+            <h5 class="modal-title font-style" id="modal-media-label">
+              Preview
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div>
+            <video controls muted autoplay loop alt="Space Game app" width="100%" height="auto" >
+              <source src="./pictures/preview/todo-preview.webm"> </video>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn font-style button-style" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    </script>
+  </body>
+</html>

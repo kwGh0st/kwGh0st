@@ -1,0 +1,245 @@
+body {
+  background-color: #f8fff8;
+  font-family: "M PLUS Code Latin", monospace;
+  color: #0d0d0d;
+}
+
+div {
+  display: block;
+}
+
+a {
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #435d99;
+  text-shadow: 3px 3px 5px #f8fff8;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Fonts & text */
+.font-style {
+  font-family: "Noto Serif Display", serif;
+}
+
+.font-white {
+  color: #f8fff8;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
+/* Backgrounds */
+.background-style {
+  background-color: #f8fff8;
+}
+
+.background-style-menu {
+  background: #58c2e1;
+}
+
+.background-style-sections {
+  background: #58c2e1;
+}
+
+.background-style-headers {
+  background: #435d99;
+}
+
+/* Buttons */
+.button-style {
+  background-color: #435d99;
+  color: #f8fff8;
+  transition-duration: 0.4s;
+}
+
+.button-style:hover {
+  background-color: #58c2e1;
+  color: #0d0d0d;
+  border-color: #435d99;
+}
+
+/* Navigation bar */
+.menu-nav {
+  padding: 10px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.menu-nav a {
+  color: #0d0d0d;
+  font-size: 18px;
+}
+
+.menu-nav a:hover {
+  background-color: #589ae0;
+  color: #0d0d0d;
+  text-shadow: none;
+  border-radius: 10px;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.section-title {
+  padding: 20px 5px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(to right bottom, #02aab0, #00cdac);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#text-title {
+  font-weight: bold;
+  font-size: 50px;
+  color: #435d99;
+}
+
+#write-text {
+  font-weight: bold;
+  font-size: 25px;
+  color: #f9f871;
+}
+
+.avatar {
+  width: 220px;
+}
+
+/* About me section */
+.section-about {
+  text-align: center;
+  min-height: 200px;
+  padding: 0 16px;
+  box-shadow: 0px 1px 5px rgba(67, 93, 153, 0.8);
+}
+
+.section2 {
+  min-height: 100px;
+}
+
+.container-about {
+  text-align: center;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 2;
+  font-size: 18px;
+}
+
+/* Portfolio section */
+.info {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-portfolio {
+  position: relative;
+  text-align: center;
+  background: #f8fff8;
+  padding: 40px;
+  margin-top: -100px;
+  border-radius: 15px;
+  box-shadow: 0px 1px 5px rgba(67, 93, 153, 0.7);
+}
+
+.container-portfolio:hover {
+  box-shadow: 0px 8px 15px rgba(67, 93, 153, 0.8);
+}
+
+.image-portfolio {
+  width: 100%;
+  max-height: 250px;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Competence section */
+.container-skills {
+  position: relative;
+  text-align: center;
+  background: #f8fff8;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 1px 5px 0px rgba(67, 93, 153, 0.7);
+}
+
+.container-skills:hover {
+  box-shadow: 0px 8px 15px 0px rgba(67, 93, 153, 0.8);
+}
+
+/* Contact form section */
+.section-form {
+  padding: 20px 0;
+  background: #98dac6;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  color: #0d0d0d;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  box-shadow: 0px 1px 5px rgba(67, 93, 153, 0.8);
+}
+
+.social {
+  font-size: 30px;
+}
+
+.social a {
+  color: #435d99;
+}
+
+.social a:hover {
+  color: #f8fff8;
+  text-shadow: 3px 3px 5px #435d99;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/* Media css */
+@media only screen and (max-width: 768px) {
+  .avatar {
+    width: 110px;
+  }
+  #text-title {
+    font-size: 28px;
+  }
+  #write-text {
+    font-size: 17px;
+  }
+  .section-title {
+    padding: 15px 2px;
+    padding-bottom: 5px;
+  }
+  .container-about {
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 16px;
+  }
+  .social {
+    font-size: 25px;
+  }
+  .footer {
+    padding: 10px;
+  }
+}
